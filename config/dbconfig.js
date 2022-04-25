@@ -1,7 +1,7 @@
 'use strict';
 var config = {
 	development : {
-		angularDatabase : {
+		database : {
 			host : 'localhost',
 			user : 'root',
 			password : '',
