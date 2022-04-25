@@ -2,10 +2,10 @@
 const Sequelize = require('sequelize');
 const config = require("../config/dbconfig").development;
 const chalk = require('chalk');
-const createPool = new Sequelize(config.angularDatabase.database, config.angularDatabase.user,
-    config.angularDatabase.password, {
+const createPool = new Sequelize(config.database.database, config.database.user,
+    config.database.password, {
     //timezone: '+05:30', //here you can pass timezone
-    host: config.angularDatabase.host,
+    host: config.database.host,
     dialect: 'mariadb',
     port: 3306,
     pool: {
